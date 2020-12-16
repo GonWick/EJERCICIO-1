@@ -8,6 +8,6 @@
     End Sub
 
     Private Sub AGENDA_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        INICIO.Show()
+
     End Sub
 End Class

@@ -37,11 +37,26 @@ Partial Class AGENDA
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.EtiquetaDescripcion = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelNombre = New System.Windows.Forms.Label()
+        Me.LabelApellido1 = New System.Windows.Forms.Label()
+        Me.LabelApellido2 = New System.Windows.Forms.Label()
+        Me.LabelSexo = New System.Windows.Forms.Label()
+        Me.RadioButtonMasculino = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonFemenino = New System.Windows.Forms.RadioButton()
+        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
+        Me.TextBoxApellido1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxApellido2 = New System.Windows.Forms.TextBox()
+        Me.LabelNacionalidad = New System.Windows.Forms.Label()
+        Me.ComboBoxNacionalidad = New System.Windows.Forms.ComboBox()
+        Me.PictureBoxFotoPerfil = New System.Windows.Forms.PictureBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBoxFotoPerfil, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -69,6 +84,7 @@ Partial Class AGENDA
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.PictureBoxFotoPerfil)
         Me.GroupBox2.Location = New System.Drawing.Point(335, 13)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(290, 221)
@@ -78,6 +94,17 @@ Partial Class AGENDA
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBoxNacionalidad)
+        Me.GroupBox1.Controls.Add(Me.LabelNacionalidad)
+        Me.GroupBox1.Controls.Add(Me.TextBoxApellido2)
+        Me.GroupBox1.Controls.Add(Me.TextBoxApellido1)
+        Me.GroupBox1.Controls.Add(Me.TextBoxNombre)
+        Me.GroupBox1.Controls.Add(Me.RadioButtonFemenino)
+        Me.GroupBox1.Controls.Add(Me.RadioButtonMasculino)
+        Me.GroupBox1.Controls.Add(Me.LabelSexo)
+        Me.GroupBox1.Controls.Add(Me.LabelApellido2)
+        Me.GroupBox1.Controls.Add(Me.LabelApellido1)
+        Me.GroupBox1.Controls.Add(Me.LabelNombre)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 15)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(308, 220)
@@ -189,6 +216,123 @@ Partial Class AGENDA
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
+        'LabelNombre
+        '
+        Me.LabelNombre.AutoSize = True
+        Me.LabelNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNombre.Location = New System.Drawing.Point(22, 44)
+        Me.LabelNombre.Name = "LabelNombre"
+        Me.LabelNombre.Size = New System.Drawing.Size(62, 18)
+        Me.LabelNombre.TabIndex = 0
+        Me.LabelNombre.Text = "Nombre"
+        '
+        'LabelApellido1
+        '
+        Me.LabelApellido1.AutoSize = True
+        Me.LabelApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelApellido1.Location = New System.Drawing.Point(22, 71)
+        Me.LabelApellido1.Name = "LabelApellido1"
+        Me.LabelApellido1.Size = New System.Drawing.Size(107, 18)
+        Me.LabelApellido1.TabIndex = 1
+        Me.LabelApellido1.Text = "Primer Apellido"
+        '
+        'LabelApellido2
+        '
+        Me.LabelApellido2.AutoSize = True
+        Me.LabelApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelApellido2.Location = New System.Drawing.Point(22, 97)
+        Me.LabelApellido2.Name = "LabelApellido2"
+        Me.LabelApellido2.Size = New System.Drawing.Size(122, 18)
+        Me.LabelApellido2.TabIndex = 2
+        Me.LabelApellido2.Text = "Segundo Apellido"
+        '
+        'LabelSexo
+        '
+        Me.LabelSexo.AutoSize = True
+        Me.LabelSexo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelSexo.Location = New System.Drawing.Point(22, 128)
+        Me.LabelSexo.Name = "LabelSexo"
+        Me.LabelSexo.Size = New System.Drawing.Size(42, 18)
+        Me.LabelSexo.TabIndex = 3
+        Me.LabelSexo.Text = "Sexo"
+        '
+        'RadioButtonMasculino
+        '
+        Me.RadioButtonMasculino.AutoSize = True
+        Me.RadioButtonMasculino.Location = New System.Drawing.Point(153, 129)
+        Me.RadioButtonMasculino.Name = "RadioButtonMasculino"
+        Me.RadioButtonMasculino.Size = New System.Drawing.Size(87, 20)
+        Me.RadioButtonMasculino.TabIndex = 4
+        Me.RadioButtonMasculino.TabStop = True
+        Me.RadioButtonMasculino.Text = "Masculino"
+        Me.RadioButtonMasculino.UseVisualStyleBackColor = True
+        '
+        'RadioButtonFemenino
+        '
+        Me.RadioButtonFemenino.AutoSize = True
+        Me.RadioButtonFemenino.Location = New System.Drawing.Point(153, 155)
+        Me.RadioButtonFemenino.Name = "RadioButtonFemenino"
+        Me.RadioButtonFemenino.Size = New System.Drawing.Size(86, 20)
+        Me.RadioButtonFemenino.TabIndex = 5
+        Me.RadioButtonFemenino.TabStop = True
+        Me.RadioButtonFemenino.Text = "Femenino"
+        Me.RadioButtonFemenino.UseVisualStyleBackColor = True
+        '
+        'TextBoxNombre
+        '
+        Me.TextBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxNombre.Location = New System.Drawing.Point(153, 41)
+        Me.TextBoxNombre.Name = "TextBoxNombre"
+        Me.TextBoxNombre.Size = New System.Drawing.Size(134, 22)
+        Me.TextBoxNombre.TabIndex = 6
+        '
+        'TextBoxApellido1
+        '
+        Me.TextBoxApellido1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxApellido1.Location = New System.Drawing.Point(153, 68)
+        Me.TextBoxApellido1.Name = "TextBoxApellido1"
+        Me.TextBoxApellido1.Size = New System.Drawing.Size(134, 22)
+        Me.TextBoxApellido1.TabIndex = 7
+        '
+        'TextBoxApellido2
+        '
+        Me.TextBoxApellido2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxApellido2.Location = New System.Drawing.Point(153, 96)
+        Me.TextBoxApellido2.Name = "TextBoxApellido2"
+        Me.TextBoxApellido2.Size = New System.Drawing.Size(134, 22)
+        Me.TextBoxApellido2.TabIndex = 8
+        '
+        'LabelNacionalidad
+        '
+        Me.LabelNacionalidad.AutoSize = True
+        Me.LabelNacionalidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNacionalidad.Location = New System.Drawing.Point(22, 187)
+        Me.LabelNacionalidad.Name = "LabelNacionalidad"
+        Me.LabelNacionalidad.Size = New System.Drawing.Size(93, 18)
+        Me.LabelNacionalidad.TabIndex = 9
+        Me.LabelNacionalidad.Text = "Nacionalidad"
+        '
+        'ComboBoxNacionalidad
+        '
+        Me.ComboBoxNacionalidad.FormattingEnabled = True
+        Me.ComboBoxNacionalidad.Items.AddRange(New Object() {"España", "Francia", "Alemania", "Italia", "Portugal", "Grecia"})
+        Me.ComboBoxNacionalidad.Location = New System.Drawing.Point(153, 181)
+        Me.ComboBoxNacionalidad.Name = "ComboBoxNacionalidad"
+        Me.ComboBoxNacionalidad.Size = New System.Drawing.Size(134, 24)
+        Me.ComboBoxNacionalidad.TabIndex = 10
+        Me.ComboBoxNacionalidad.Text = "Seleccione Pais"
+        '
+        'PictureBoxFotoPerfil
+        '
+        Me.PictureBoxFotoPerfil.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBoxFotoPerfil.Image = CType(resources.GetObject("PictureBoxFotoPerfil.Image"), System.Drawing.Image)
+        Me.PictureBoxFotoPerfil.Location = New System.Drawing.Point(3, 18)
+        Me.PictureBoxFotoPerfil.Name = "PictureBoxFotoPerfil"
+        Me.PictureBoxFotoPerfil.Size = New System.Drawing.Size(284, 200)
+        Me.PictureBoxFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxFotoPerfil.TabIndex = 0
+        Me.PictureBoxFotoPerfil.TabStop = False
+        '
         'AGENDA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -204,11 +348,15 @@ Partial Class AGENDA
         Me.Text = "AGENDA NAVIDAD"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBoxFotoPerfil, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -227,4 +375,16 @@ Partial Class AGENDA
     Friend WithEvents BotonGuardar As Button
     Friend WithEvents BotonNuevo As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBoxFotoPerfil As PictureBox
+    Friend WithEvents ComboBoxNacionalidad As ComboBox
+    Friend WithEvents LabelNacionalidad As Label
+    Friend WithEvents TextBoxApellido2 As TextBox
+    Friend WithEvents TextBoxApellido1 As TextBox
+    Friend WithEvents TextBoxNombre As TextBox
+    Friend WithEvents RadioButtonFemenino As RadioButton
+    Friend WithEvents RadioButtonMasculino As RadioButton
+    Friend WithEvents LabelSexo As Label
+    Friend WithEvents LabelApellido2 As Label
+    Friend WithEvents LabelApellido1 As Label
+    Friend WithEvents LabelNombre As Label
 End Class

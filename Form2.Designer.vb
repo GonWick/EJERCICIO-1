@@ -46,7 +46,7 @@ Partial Class AGENDA
         Me.ListaPreferencias = New System.Windows.Forms.ListBox()
         Me.EtiquetaPreferencias = New System.Windows.Forms.Label()
         Me.GroupBoxOtrosDatos = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxDescripcion = New System.Windows.Forms.TextBox()
         Me.EtiquetaDescripcion = New System.Windows.Forms.Label()
         Me.PictureBoxLogo = New System.Windows.Forms.PictureBox()
         Me.TabControlDatos.SuspendLayout()
@@ -300,7 +300,7 @@ Partial Class AGENDA
         '
         'GroupBoxOtrosDatos
         '
-        Me.GroupBoxOtrosDatos.Controls.Add(Me.TextBox1)
+        Me.GroupBoxOtrosDatos.Controls.Add(Me.TextBoxDescripcion)
         Me.GroupBoxOtrosDatos.Controls.Add(Me.EtiquetaDescripcion)
         Me.GroupBoxOtrosDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxOtrosDatos.Location = New System.Drawing.Point(13, 20)
@@ -310,13 +310,13 @@ Partial Class AGENDA
         Me.GroupBoxOtrosDatos.TabStop = False
         Me.GroupBoxOtrosDatos.Text = "Otros datos"
         '
-        'TextBox1
+        'TextBoxDescripcion
         '
-        Me.TextBox1.Location = New System.Drawing.Point(117, 33)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(167, 162)
-        Me.TextBox1.TabIndex = 1
+        Me.TextBoxDescripcion.Location = New System.Drawing.Point(117, 33)
+        Me.TextBoxDescripcion.Multiline = True
+        Me.TextBoxDescripcion.Name = "TextBoxDescripcion"
+        Me.TextBoxDescripcion.Size = New System.Drawing.Size(167, 162)
+        Me.TextBoxDescripcion.TabIndex = 1
         '
         'EtiquetaDescripcion
         '
@@ -375,7 +375,7 @@ Partial Class AGENDA
     Friend WithEvents EtiquetaDescripcion As Label
     Friend WithEvents ListaPreferencias As ListBox
     Friend WithEvents EtiquetaPreferencias As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBoxDescripcion As TextBox
     Friend WithEvents BotonSalir As Button
     Friend WithEvents BotonGuardar As Button
     Friend WithEvents BotonNuevo As Button

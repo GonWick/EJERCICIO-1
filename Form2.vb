@@ -10,4 +10,9 @@
     Private Sub AGENDA_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
     End Sub
+
+    Private Sub ButtonFormulario_Click(sender As Object, e As EventArgs) Handles ButtonFormulario.Click
+        FormNuevo.Show()
+
+    End Sub
 End Class

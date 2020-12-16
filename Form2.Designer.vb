@@ -49,6 +49,7 @@ Partial Class AGENDA
         Me.TextBoxDescripcion = New System.Windows.Forms.TextBox()
         Me.EtiquetaDescripcion = New System.Windows.Forms.Label()
         Me.PictureBoxLogo = New System.Windows.Forms.PictureBox()
+        Me.ButtonFormulario = New System.Windows.Forms.Button()
         Me.TabControlDatos.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBoxDatosPerfil.SuspendLayout()
@@ -72,6 +73,7 @@ Partial Class AGENDA
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.ButtonFormulario)
         Me.TabPage1.Controls.Add(Me.GroupBoxDatosPerfil)
         Me.TabPage1.Controls.Add(Me.GroupBoxDatosUsuario)
         Me.TabPage1.Location = New System.Drawing.Point(4, 27)
@@ -338,6 +340,16 @@ Partial Class AGENDA
         Me.PictureBoxLogo.TabIndex = 1
         Me.PictureBoxLogo.TabStop = False
         '
+        'ButtonFormulario
+        '
+        Me.ButtonFormulario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonFormulario.Location = New System.Drawing.Point(338, 237)
+        Me.ButtonFormulario.Name = "ButtonFormulario"
+        Me.ButtonFormulario.Size = New System.Drawing.Size(284, 23)
+        Me.ButtonFormulario.TabIndex = 2
+        Me.ButtonFormulario.Text = "Nuevo Formulario"
+        Me.ButtonFormulario.UseVisualStyleBackColor = True
+        '
         'AGENDA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -392,4 +404,5 @@ Partial Class AGENDA
     Friend WithEvents LabelApellido2 As Label
     Friend WithEvents LabelApellido1 As Label
     Friend WithEvents LabelNombre As Label
+    Friend WithEvents ButtonFormulario As Button
 End Class

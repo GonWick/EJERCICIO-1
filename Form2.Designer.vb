@@ -23,284 +23,117 @@ Partial Class AGENDA
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AGENDA))
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabControlDatos = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxDatosPerfil = New System.Windows.Forms.GroupBox()
+        Me.PictureBoxFotoPerfil = New System.Windows.Forms.PictureBox()
+        Me.GroupBoxDatosUsuario = New System.Windows.Forms.GroupBox()
+        Me.ComboBoxNacionalidad = New System.Windows.Forms.ComboBox()
+        Me.LabelNacionalidad = New System.Windows.Forms.Label()
+        Me.TextBoxApellido2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxApellido1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
+        Me.RadioButtonFemenino = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonMasculino = New System.Windows.Forms.RadioButton()
+        Me.LabelSexo = New System.Windows.Forms.Label()
+        Me.LabelApellido2 = New System.Windows.Forms.Label()
+        Me.LabelApellido1 = New System.Windows.Forms.Label()
+        Me.LabelNombre = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.BotonSalir = New System.Windows.Forms.Button()
         Me.BotonGuardar = New System.Windows.Forms.Button()
         Me.BotonNuevo = New System.Windows.Forms.Button()
         Me.ListaPreferencias = New System.Windows.Forms.ListBox()
         Me.EtiquetaPreferencias = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBoxOtrosDatos = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.EtiquetaDescripcion = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LabelNombre = New System.Windows.Forms.Label()
-        Me.LabelApellido1 = New System.Windows.Forms.Label()
-        Me.LabelApellido2 = New System.Windows.Forms.Label()
-        Me.LabelSexo = New System.Windows.Forms.Label()
-        Me.RadioButtonMasculino = New System.Windows.Forms.RadioButton()
-        Me.RadioButtonFemenino = New System.Windows.Forms.RadioButton()
-        Me.TextBoxNombre = New System.Windows.Forms.TextBox()
-        Me.TextBoxApellido1 = New System.Windows.Forms.TextBox()
-        Me.TextBoxApellido2 = New System.Windows.Forms.TextBox()
-        Me.LabelNacionalidad = New System.Windows.Forms.Label()
-        Me.ComboBoxNacionalidad = New System.Windows.Forms.ComboBox()
-        Me.PictureBoxFotoPerfil = New System.Windows.Forms.PictureBox()
-        Me.TabControl1.SuspendLayout()
+        Me.PictureBoxLogo = New System.Windows.Forms.PictureBox()
+        Me.TabControlDatos.SuspendLayout()
         Me.TabPage1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBoxDatosPerfil.SuspendLayout()
         CType(Me.PictureBoxFotoPerfil, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBoxDatosUsuario.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.GroupBoxOtrosDatos.SuspendLayout()
+        CType(Me.PictureBoxLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TabControl1
+        'TabControlDatos
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(12, 23)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(643, 294)
-        Me.TabControl1.TabIndex = 0
+        Me.TabControlDatos.Controls.Add(Me.TabPage1)
+        Me.TabControlDatos.Controls.Add(Me.TabPage2)
+        Me.TabControlDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControlDatos.Location = New System.Drawing.Point(12, 23)
+        Me.TabControlDatos.Name = "TabControlDatos"
+        Me.TabControlDatos.SelectedIndex = 0
+        Me.TabControlDatos.Size = New System.Drawing.Size(643, 294)
+        Me.TabControlDatos.TabIndex = 0
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.GroupBox2)
-        Me.TabPage1.Controls.Add(Me.GroupBox1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Controls.Add(Me.GroupBoxDatosPerfil)
+        Me.TabPage1.Controls.Add(Me.GroupBoxDatosUsuario)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(635, 265)
+        Me.TabPage1.Size = New System.Drawing.Size(635, 263)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos Generales"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'GroupBoxDatosPerfil
         '
-        Me.GroupBox2.Controls.Add(Me.PictureBoxFotoPerfil)
-        Me.GroupBox2.Location = New System.Drawing.Point(335, 13)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(290, 221)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Datos del perfil"
+        Me.GroupBoxDatosPerfil.Controls.Add(Me.PictureBoxFotoPerfil)
+        Me.GroupBoxDatosPerfil.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBoxDatosPerfil.Location = New System.Drawing.Point(335, 13)
+        Me.GroupBoxDatosPerfil.Name = "GroupBoxDatosPerfil"
+        Me.GroupBoxDatosPerfil.Size = New System.Drawing.Size(290, 221)
+        Me.GroupBoxDatosPerfil.TabIndex = 1
+        Me.GroupBoxDatosPerfil.TabStop = False
+        Me.GroupBoxDatosPerfil.Text = "Datos del perfil"
         '
-        'GroupBox1
+        'PictureBoxFotoPerfil
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBoxNacionalidad)
-        Me.GroupBox1.Controls.Add(Me.LabelNacionalidad)
-        Me.GroupBox1.Controls.Add(Me.TextBoxApellido2)
-        Me.GroupBox1.Controls.Add(Me.TextBoxApellido1)
-        Me.GroupBox1.Controls.Add(Me.TextBoxNombre)
-        Me.GroupBox1.Controls.Add(Me.RadioButtonFemenino)
-        Me.GroupBox1.Controls.Add(Me.RadioButtonMasculino)
-        Me.GroupBox1.Controls.Add(Me.LabelSexo)
-        Me.GroupBox1.Controls.Add(Me.LabelApellido2)
-        Me.GroupBox1.Controls.Add(Me.LabelApellido1)
-        Me.GroupBox1.Controls.Add(Me.LabelNombre)
-        Me.GroupBox1.Location = New System.Drawing.Point(15, 15)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(308, 220)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Datos del usuario"
+        Me.PictureBoxFotoPerfil.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBoxFotoPerfil.Image = CType(resources.GetObject("PictureBoxFotoPerfil.Image"), System.Drawing.Image)
+        Me.PictureBoxFotoPerfil.Location = New System.Drawing.Point(3, 20)
+        Me.PictureBoxFotoPerfil.Name = "PictureBoxFotoPerfil"
+        Me.PictureBoxFotoPerfil.Size = New System.Drawing.Size(284, 198)
+        Me.PictureBoxFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBoxFotoPerfil.TabIndex = 0
+        Me.PictureBoxFotoPerfil.TabStop = False
         '
-        'TabPage2
+        'GroupBoxDatosUsuario
         '
-        Me.TabPage2.Controls.Add(Me.BotonSalir)
-        Me.TabPage2.Controls.Add(Me.BotonGuardar)
-        Me.TabPage2.Controls.Add(Me.BotonNuevo)
-        Me.TabPage2.Controls.Add(Me.ListaPreferencias)
-        Me.TabPage2.Controls.Add(Me.EtiquetaPreferencias)
-        Me.TabPage2.Controls.Add(Me.GroupBox3)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(635, 265)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Datos Opcionales"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.ComboBoxNacionalidad)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelNacionalidad)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.TextBoxApellido2)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.TextBoxApellido1)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.TextBoxNombre)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.RadioButtonFemenino)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.RadioButtonMasculino)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelSexo)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelApellido2)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelApellido1)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelNombre)
+        Me.GroupBoxDatosUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBoxDatosUsuario.Location = New System.Drawing.Point(15, 15)
+        Me.GroupBoxDatosUsuario.Name = "GroupBoxDatosUsuario"
+        Me.GroupBoxDatosUsuario.Size = New System.Drawing.Size(308, 220)
+        Me.GroupBoxDatosUsuario.TabIndex = 0
+        Me.GroupBoxDatosUsuario.TabStop = False
+        Me.GroupBoxDatosUsuario.Text = "Datos del usuario"
         '
-        'BotonSalir
+        'ComboBoxNacionalidad
         '
-        Me.BotonSalir.Location = New System.Drawing.Point(544, 198)
-        Me.BotonSalir.Name = "BotonSalir"
-        Me.BotonSalir.Size = New System.Drawing.Size(75, 23)
-        Me.BotonSalir.TabIndex = 5
-        Me.BotonSalir.Text = "Salir"
-        Me.BotonSalir.UseVisualStyleBackColor = True
-        '
-        'BotonGuardar
-        '
-        Me.BotonGuardar.Location = New System.Drawing.Point(451, 198)
-        Me.BotonGuardar.Name = "BotonGuardar"
-        Me.BotonGuardar.Size = New System.Drawing.Size(75, 23)
-        Me.BotonGuardar.TabIndex = 4
-        Me.BotonGuardar.Text = "Guardar"
-        Me.BotonGuardar.UseVisualStyleBackColor = True
-        '
-        'BotonNuevo
-        '
-        Me.BotonNuevo.Location = New System.Drawing.Point(357, 198)
-        Me.BotonNuevo.Name = "BotonNuevo"
-        Me.BotonNuevo.Size = New System.Drawing.Size(75, 23)
-        Me.BotonNuevo.TabIndex = 3
-        Me.BotonNuevo.Text = "Nuevo"
-        Me.BotonNuevo.UseVisualStyleBackColor = True
-        '
-        'ListaPreferencias
-        '
-        Me.ListaPreferencias.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListaPreferencias.FormattingEnabled = True
-        Me.ListaPreferencias.ItemHeight = 16
-        Me.ListaPreferencias.Items.AddRange(New Object() {"Leer", "Bailar", "Correr"})
-        Me.ListaPreferencias.Location = New System.Drawing.Point(419, 78)
-        Me.ListaPreferencias.Name = "ListaPreferencias"
-        Me.ListaPreferencias.Size = New System.Drawing.Size(116, 68)
-        Me.ListaPreferencias.TabIndex = 2
-        '
-        'EtiquetaPreferencias
-        '
-        Me.EtiquetaPreferencias.AutoSize = True
-        Me.EtiquetaPreferencias.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EtiquetaPreferencias.Location = New System.Drawing.Point(438, 53)
-        Me.EtiquetaPreferencias.Name = "EtiquetaPreferencias"
-        Me.EtiquetaPreferencias.Size = New System.Drawing.Size(84, 16)
-        Me.EtiquetaPreferencias.TabIndex = 1
-        Me.EtiquetaPreferencias.Text = "Preferencias"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Controls.Add(Me.TextBox1)
-        Me.GroupBox3.Controls.Add(Me.EtiquetaDescripcion)
-        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(13, 20)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(303, 214)
-        Me.GroupBox3.TabIndex = 0
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Otros datos"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(113, 33)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(167, 162)
-        Me.TextBox1.TabIndex = 1
-        '
-        'EtiquetaDescripcion
-        '
-        Me.EtiquetaDescripcion.AutoSize = True
-        Me.EtiquetaDescripcion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.EtiquetaDescripcion.Location = New System.Drawing.Point(24, 36)
-        Me.EtiquetaDescripcion.Name = "EtiquetaDescripcion"
-        Me.EtiquetaDescripcion.Size = New System.Drawing.Size(80, 16)
-        Me.EtiquetaDescripcion.TabIndex = 0
-        Me.EtiquetaDescripcion.Text = "Descripción"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(253, 8)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(402, 31)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'LabelNombre
-        '
-        Me.LabelNombre.AutoSize = True
-        Me.LabelNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelNombre.Location = New System.Drawing.Point(22, 44)
-        Me.LabelNombre.Name = "LabelNombre"
-        Me.LabelNombre.Size = New System.Drawing.Size(62, 18)
-        Me.LabelNombre.TabIndex = 0
-        Me.LabelNombre.Text = "Nombre"
-        '
-        'LabelApellido1
-        '
-        Me.LabelApellido1.AutoSize = True
-        Me.LabelApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelApellido1.Location = New System.Drawing.Point(22, 71)
-        Me.LabelApellido1.Name = "LabelApellido1"
-        Me.LabelApellido1.Size = New System.Drawing.Size(107, 18)
-        Me.LabelApellido1.TabIndex = 1
-        Me.LabelApellido1.Text = "Primer Apellido"
-        '
-        'LabelApellido2
-        '
-        Me.LabelApellido2.AutoSize = True
-        Me.LabelApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelApellido2.Location = New System.Drawing.Point(22, 97)
-        Me.LabelApellido2.Name = "LabelApellido2"
-        Me.LabelApellido2.Size = New System.Drawing.Size(122, 18)
-        Me.LabelApellido2.TabIndex = 2
-        Me.LabelApellido2.Text = "Segundo Apellido"
-        '
-        'LabelSexo
-        '
-        Me.LabelSexo.AutoSize = True
-        Me.LabelSexo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelSexo.Location = New System.Drawing.Point(22, 128)
-        Me.LabelSexo.Name = "LabelSexo"
-        Me.LabelSexo.Size = New System.Drawing.Size(42, 18)
-        Me.LabelSexo.TabIndex = 3
-        Me.LabelSexo.Text = "Sexo"
-        '
-        'RadioButtonMasculino
-        '
-        Me.RadioButtonMasculino.AutoSize = True
-        Me.RadioButtonMasculino.Location = New System.Drawing.Point(153, 129)
-        Me.RadioButtonMasculino.Name = "RadioButtonMasculino"
-        Me.RadioButtonMasculino.Size = New System.Drawing.Size(87, 20)
-        Me.RadioButtonMasculino.TabIndex = 4
-        Me.RadioButtonMasculino.TabStop = True
-        Me.RadioButtonMasculino.Text = "Masculino"
-        Me.RadioButtonMasculino.UseVisualStyleBackColor = True
-        '
-        'RadioButtonFemenino
-        '
-        Me.RadioButtonFemenino.AutoSize = True
-        Me.RadioButtonFemenino.Location = New System.Drawing.Point(153, 155)
-        Me.RadioButtonFemenino.Name = "RadioButtonFemenino"
-        Me.RadioButtonFemenino.Size = New System.Drawing.Size(86, 20)
-        Me.RadioButtonFemenino.TabIndex = 5
-        Me.RadioButtonFemenino.TabStop = True
-        Me.RadioButtonFemenino.Text = "Femenino"
-        Me.RadioButtonFemenino.UseVisualStyleBackColor = True
-        '
-        'TextBoxNombre
-        '
-        Me.TextBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxNombre.Location = New System.Drawing.Point(153, 41)
-        Me.TextBoxNombre.Name = "TextBoxNombre"
-        Me.TextBoxNombre.Size = New System.Drawing.Size(134, 22)
-        Me.TextBoxNombre.TabIndex = 6
-        '
-        'TextBoxApellido1
-        '
-        Me.TextBoxApellido1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxApellido1.Location = New System.Drawing.Point(153, 68)
-        Me.TextBoxApellido1.Name = "TextBoxApellido1"
-        Me.TextBoxApellido1.Size = New System.Drawing.Size(134, 22)
-        Me.TextBoxApellido1.TabIndex = 7
-        '
-        'TextBoxApellido2
-        '
-        Me.TextBoxApellido2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBoxApellido2.Location = New System.Drawing.Point(153, 96)
-        Me.TextBoxApellido2.Name = "TextBoxApellido2"
-        Me.TextBoxApellido2.Size = New System.Drawing.Size(134, 22)
-        Me.TextBoxApellido2.TabIndex = 8
+        Me.ComboBoxNacionalidad.FormattingEnabled = True
+        Me.ComboBoxNacionalidad.Items.AddRange(New Object() {"España", "Francia", "Alemania", "Italia", "Portugal", "Grecia"})
+        Me.ComboBoxNacionalidad.Location = New System.Drawing.Point(153, 181)
+        Me.ComboBoxNacionalidad.Name = "ComboBoxNacionalidad"
+        Me.ComboBoxNacionalidad.Size = New System.Drawing.Size(134, 26)
+        Me.ComboBoxNacionalidad.TabIndex = 10
+        Me.ComboBoxNacionalidad.Text = "Seleccione Pais"
         '
         'LabelNacionalidad
         '
@@ -312,61 +145,233 @@ Partial Class AGENDA
         Me.LabelNacionalidad.TabIndex = 9
         Me.LabelNacionalidad.Text = "Nacionalidad"
         '
-        'ComboBoxNacionalidad
+        'TextBoxApellido2
         '
-        Me.ComboBoxNacionalidad.FormattingEnabled = True
-        Me.ComboBoxNacionalidad.Items.AddRange(New Object() {"España", "Francia", "Alemania", "Italia", "Portugal", "Grecia"})
-        Me.ComboBoxNacionalidad.Location = New System.Drawing.Point(153, 181)
-        Me.ComboBoxNacionalidad.Name = "ComboBoxNacionalidad"
-        Me.ComboBoxNacionalidad.Size = New System.Drawing.Size(134, 24)
-        Me.ComboBoxNacionalidad.TabIndex = 10
-        Me.ComboBoxNacionalidad.Text = "Seleccione Pais"
+        Me.TextBoxApellido2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxApellido2.Location = New System.Drawing.Point(153, 96)
+        Me.TextBoxApellido2.Name = "TextBoxApellido2"
+        Me.TextBoxApellido2.Size = New System.Drawing.Size(134, 24)
+        Me.TextBoxApellido2.TabIndex = 8
         '
-        'PictureBoxFotoPerfil
+        'TextBoxApellido1
         '
-        Me.PictureBoxFotoPerfil.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBoxFotoPerfil.Image = CType(resources.GetObject("PictureBoxFotoPerfil.Image"), System.Drawing.Image)
-        Me.PictureBoxFotoPerfil.Location = New System.Drawing.Point(3, 18)
-        Me.PictureBoxFotoPerfil.Name = "PictureBoxFotoPerfil"
-        Me.PictureBoxFotoPerfil.Size = New System.Drawing.Size(284, 200)
-        Me.PictureBoxFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBoxFotoPerfil.TabIndex = 0
-        Me.PictureBoxFotoPerfil.TabStop = False
+        Me.TextBoxApellido1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxApellido1.Location = New System.Drawing.Point(153, 68)
+        Me.TextBoxApellido1.Name = "TextBoxApellido1"
+        Me.TextBoxApellido1.Size = New System.Drawing.Size(134, 24)
+        Me.TextBoxApellido1.TabIndex = 7
+        '
+        'TextBoxNombre
+        '
+        Me.TextBoxNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBoxNombre.Location = New System.Drawing.Point(153, 41)
+        Me.TextBoxNombre.Name = "TextBoxNombre"
+        Me.TextBoxNombre.Size = New System.Drawing.Size(134, 24)
+        Me.TextBoxNombre.TabIndex = 6
+        '
+        'RadioButtonFemenino
+        '
+        Me.RadioButtonFemenino.AutoSize = True
+        Me.RadioButtonFemenino.Location = New System.Drawing.Point(153, 155)
+        Me.RadioButtonFemenino.Name = "RadioButtonFemenino"
+        Me.RadioButtonFemenino.Size = New System.Drawing.Size(92, 22)
+        Me.RadioButtonFemenino.TabIndex = 5
+        Me.RadioButtonFemenino.TabStop = True
+        Me.RadioButtonFemenino.Text = "Femenino"
+        Me.RadioButtonFemenino.UseVisualStyleBackColor = True
+        '
+        'RadioButtonMasculino
+        '
+        Me.RadioButtonMasculino.AutoSize = True
+        Me.RadioButtonMasculino.Location = New System.Drawing.Point(153, 129)
+        Me.RadioButtonMasculino.Name = "RadioButtonMasculino"
+        Me.RadioButtonMasculino.Size = New System.Drawing.Size(94, 22)
+        Me.RadioButtonMasculino.TabIndex = 4
+        Me.RadioButtonMasculino.TabStop = True
+        Me.RadioButtonMasculino.Text = "Masculino"
+        Me.RadioButtonMasculino.UseVisualStyleBackColor = True
+        '
+        'LabelSexo
+        '
+        Me.LabelSexo.AutoSize = True
+        Me.LabelSexo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelSexo.Location = New System.Drawing.Point(22, 128)
+        Me.LabelSexo.Name = "LabelSexo"
+        Me.LabelSexo.Size = New System.Drawing.Size(42, 18)
+        Me.LabelSexo.TabIndex = 3
+        Me.LabelSexo.Text = "Sexo"
+        '
+        'LabelApellido2
+        '
+        Me.LabelApellido2.AutoSize = True
+        Me.LabelApellido2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelApellido2.Location = New System.Drawing.Point(22, 97)
+        Me.LabelApellido2.Name = "LabelApellido2"
+        Me.LabelApellido2.Size = New System.Drawing.Size(122, 18)
+        Me.LabelApellido2.TabIndex = 2
+        Me.LabelApellido2.Text = "Segundo Apellido"
+        '
+        'LabelApellido1
+        '
+        Me.LabelApellido1.AutoSize = True
+        Me.LabelApellido1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelApellido1.Location = New System.Drawing.Point(22, 71)
+        Me.LabelApellido1.Name = "LabelApellido1"
+        Me.LabelApellido1.Size = New System.Drawing.Size(107, 18)
+        Me.LabelApellido1.TabIndex = 1
+        Me.LabelApellido1.Text = "Primer Apellido"
+        '
+        'LabelNombre
+        '
+        Me.LabelNombre.AutoSize = True
+        Me.LabelNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNombre.Location = New System.Drawing.Point(22, 44)
+        Me.LabelNombre.Name = "LabelNombre"
+        Me.LabelNombre.Size = New System.Drawing.Size(62, 18)
+        Me.LabelNombre.TabIndex = 0
+        Me.LabelNombre.Text = "Nombre"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.BotonSalir)
+        Me.TabPage2.Controls.Add(Me.BotonGuardar)
+        Me.TabPage2.Controls.Add(Me.BotonNuevo)
+        Me.TabPage2.Controls.Add(Me.ListaPreferencias)
+        Me.TabPage2.Controls.Add(Me.EtiquetaPreferencias)
+        Me.TabPage2.Controls.Add(Me.GroupBoxOtrosDatos)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 27)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(635, 263)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Datos Opcionales"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'BotonSalir
+        '
+        Me.BotonSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonSalir.Location = New System.Drawing.Point(528, 190)
+        Me.BotonSalir.Name = "BotonSalir"
+        Me.BotonSalir.Size = New System.Drawing.Size(75, 25)
+        Me.BotonSalir.TabIndex = 5
+        Me.BotonSalir.Text = "Salir"
+        Me.BotonSalir.UseVisualStyleBackColor = True
+        '
+        'BotonGuardar
+        '
+        Me.BotonGuardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonGuardar.Location = New System.Drawing.Point(447, 190)
+        Me.BotonGuardar.Name = "BotonGuardar"
+        Me.BotonGuardar.Size = New System.Drawing.Size(75, 25)
+        Me.BotonGuardar.TabIndex = 4
+        Me.BotonGuardar.Text = "Guardar"
+        Me.BotonGuardar.UseVisualStyleBackColor = True
+        '
+        'BotonNuevo
+        '
+        Me.BotonNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BotonNuevo.Location = New System.Drawing.Point(366, 190)
+        Me.BotonNuevo.Name = "BotonNuevo"
+        Me.BotonNuevo.Size = New System.Drawing.Size(75, 25)
+        Me.BotonNuevo.TabIndex = 3
+        Me.BotonNuevo.Text = "Nuevo"
+        Me.BotonNuevo.UseVisualStyleBackColor = True
+        '
+        'ListaPreferencias
+        '
+        Me.ListaPreferencias.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListaPreferencias.FormattingEnabled = True
+        Me.ListaPreferencias.ItemHeight = 18
+        Me.ListaPreferencias.Items.AddRange(New Object() {"Leer", "Bailar", "Correr"})
+        Me.ListaPreferencias.Location = New System.Drawing.Point(418, 86)
+        Me.ListaPreferencias.Name = "ListaPreferencias"
+        Me.ListaPreferencias.Size = New System.Drawing.Size(127, 76)
+        Me.ListaPreferencias.TabIndex = 2
+        '
+        'EtiquetaPreferencias
+        '
+        Me.EtiquetaPreferencias.AutoSize = True
+        Me.EtiquetaPreferencias.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtiquetaPreferencias.Location = New System.Drawing.Point(431, 53)
+        Me.EtiquetaPreferencias.Name = "EtiquetaPreferencias"
+        Me.EtiquetaPreferencias.Size = New System.Drawing.Size(91, 18)
+        Me.EtiquetaPreferencias.TabIndex = 1
+        Me.EtiquetaPreferencias.Text = "Preferencias"
+        '
+        'GroupBoxOtrosDatos
+        '
+        Me.GroupBoxOtrosDatos.Controls.Add(Me.TextBox1)
+        Me.GroupBoxOtrosDatos.Controls.Add(Me.EtiquetaDescripcion)
+        Me.GroupBoxOtrosDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBoxOtrosDatos.Location = New System.Drawing.Point(13, 20)
+        Me.GroupBoxOtrosDatos.Name = "GroupBoxOtrosDatos"
+        Me.GroupBoxOtrosDatos.Size = New System.Drawing.Size(303, 214)
+        Me.GroupBoxOtrosDatos.TabIndex = 0
+        Me.GroupBoxOtrosDatos.TabStop = False
+        Me.GroupBoxOtrosDatos.Text = "Otros datos"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(117, 33)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(167, 162)
+        Me.TextBox1.TabIndex = 1
+        '
+        'EtiquetaDescripcion
+        '
+        Me.EtiquetaDescripcion.AutoSize = True
+        Me.EtiquetaDescripcion.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EtiquetaDescripcion.Location = New System.Drawing.Point(24, 36)
+        Me.EtiquetaDescripcion.Name = "EtiquetaDescripcion"
+        Me.EtiquetaDescripcion.Size = New System.Drawing.Size(87, 18)
+        Me.EtiquetaDescripcion.TabIndex = 0
+        Me.EtiquetaDescripcion.Text = "Descripción"
+        '
+        'PictureBoxLogo
+        '
+        Me.PictureBoxLogo.Image = CType(resources.GetObject("PictureBoxLogo.Image"), System.Drawing.Image)
+        Me.PictureBoxLogo.Location = New System.Drawing.Point(278, 8)
+        Me.PictureBoxLogo.Name = "PictureBoxLogo"
+        Me.PictureBoxLogo.Size = New System.Drawing.Size(377, 31)
+        Me.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBoxLogo.TabIndex = 1
+        Me.PictureBoxLogo.TabStop = False
         '
         'AGENDA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(667, 330)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.PictureBoxLogo)
+        Me.Controls.Add(Me.TabControlDatos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "AGENDA"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AGENDA NAVIDAD"
-        Me.TabControl1.ResumeLayout(False)
+        Me.TabControlDatos.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GroupBoxDatosPerfil.ResumeLayout(False)
+        CType(Me.PictureBoxFotoPerfil, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBoxDatosUsuario.ResumeLayout(False)
+        Me.GroupBoxDatosUsuario.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBoxFotoPerfil, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBoxOtrosDatos.ResumeLayout(False)
+        Me.GroupBoxOtrosDatos.PerformLayout()
+        CType(Me.PictureBoxLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabControlDatos As TabControl
     Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBoxDatosPerfil As GroupBox
+    Friend WithEvents GroupBoxDatosUsuario As GroupBox
     Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents GroupBoxOtrosDatos As GroupBox
     Friend WithEvents EtiquetaDescripcion As Label
     Friend WithEvents ListaPreferencias As ListBox
     Friend WithEvents EtiquetaPreferencias As Label
@@ -374,7 +379,7 @@ Partial Class AGENDA
     Friend WithEvents BotonSalir As Button
     Friend WithEvents BotonGuardar As Button
     Friend WithEvents BotonNuevo As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBoxLogo As PictureBox
     Friend WithEvents PictureBoxFotoPerfil As PictureBox
     Friend WithEvents ComboBoxNacionalidad As ComboBox
     Friend WithEvents LabelNacionalidad As Label

@@ -52,6 +52,7 @@ Partial Class AGENDA
         Me.LabelNacimiento = New System.Windows.Forms.Label()
         Me.DateTimePickerNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.ButtonDatos = New System.Windows.Forms.Button()
+        Me.ButtonSalir = New System.Windows.Forms.Button()
         Me.TabControlDatos.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBoxDatosPerfil.SuspendLayout()
@@ -364,18 +365,28 @@ Partial Class AGENDA
         '
         'ButtonDatos
         '
-        Me.ButtonDatos.Location = New System.Drawing.Point(311, 373)
+        Me.ButtonDatos.Location = New System.Drawing.Point(16, 373)
         Me.ButtonDatos.Name = "ButtonDatos"
         Me.ButtonDatos.Size = New System.Drawing.Size(75, 23)
         Me.ButtonDatos.TabIndex = 2
         Me.ButtonDatos.Text = "Ver Datos"
         Me.ButtonDatos.UseVisualStyleBackColor = True
         '
+        'ButtonSalir
+        '
+        Me.ButtonSalir.Location = New System.Drawing.Point(614, 373)
+        Me.ButtonSalir.Name = "ButtonSalir"
+        Me.ButtonSalir.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSalir.TabIndex = 3
+        Me.ButtonSalir.Text = "Salir"
+        Me.ButtonSalir.UseVisualStyleBackColor = True
+        '
         'AGENDA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(705, 408)
+        Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.ButtonDatos)
         Me.Controls.Add(Me.PictureBoxLogo)
         Me.Controls.Add(Me.TabControlDatos)
@@ -429,4 +440,5 @@ Partial Class AGENDA
     Friend WithEvents DateTimePickerNacimiento As DateTimePicker
     Friend WithEvents LabelNacimiento As Label
     Friend WithEvents ButtonDatos As Button
+    Friend WithEvents ButtonSalir As Button
 End Class

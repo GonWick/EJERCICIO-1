@@ -14,4 +14,9 @@
     Private Sub RadioButtonMasculino_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonMasculino.CheckedChanged
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ButtonDatos.Click
+        DATOS.Show()
+
+    End Sub
 End Class

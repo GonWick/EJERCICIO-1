@@ -49,6 +49,8 @@ Partial Class AGENDA
         Me.TextBoxDescripcion = New System.Windows.Forms.TextBox()
         Me.EtiquetaDescripcion = New System.Windows.Forms.Label()
         Me.PictureBoxLogo = New System.Windows.Forms.PictureBox()
+        Me.LabelNacimiento = New System.Windows.Forms.Label()
+        Me.DateTimePickerNacimiento = New System.Windows.Forms.DateTimePicker()
         Me.TabControlDatos.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBoxDatosPerfil.SuspendLayout()
@@ -67,7 +69,7 @@ Partial Class AGENDA
         Me.TabControlDatos.Location = New System.Drawing.Point(12, 23)
         Me.TabControlDatos.Name = "TabControlDatos"
         Me.TabControlDatos.SelectedIndex = 0
-        Me.TabControlDatos.Size = New System.Drawing.Size(643, 294)
+        Me.TabControlDatos.Size = New System.Drawing.Size(681, 344)
         Me.TabControlDatos.TabIndex = 0
         '
         'TabPage1
@@ -77,7 +79,7 @@ Partial Class AGENDA
         Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(635, 263)
+        Me.TabPage1.Size = New System.Drawing.Size(673, 313)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Datos Generales"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -88,7 +90,7 @@ Partial Class AGENDA
         Me.GroupBoxDatosPerfil.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxDatosPerfil.Location = New System.Drawing.Point(335, 13)
         Me.GroupBoxDatosPerfil.Name = "GroupBoxDatosPerfil"
-        Me.GroupBoxDatosPerfil.Size = New System.Drawing.Size(290, 221)
+        Me.GroupBoxDatosPerfil.Size = New System.Drawing.Size(332, 280)
         Me.GroupBoxDatosPerfil.TabIndex = 1
         Me.GroupBoxDatosPerfil.TabStop = False
         Me.GroupBoxDatosPerfil.Text = "Datos del perfil"
@@ -99,13 +101,15 @@ Partial Class AGENDA
         Me.PictureBoxFotoPerfil.Image = CType(resources.GetObject("PictureBoxFotoPerfil.Image"), System.Drawing.Image)
         Me.PictureBoxFotoPerfil.Location = New System.Drawing.Point(3, 20)
         Me.PictureBoxFotoPerfil.Name = "PictureBoxFotoPerfil"
-        Me.PictureBoxFotoPerfil.Size = New System.Drawing.Size(284, 198)
+        Me.PictureBoxFotoPerfil.Size = New System.Drawing.Size(326, 257)
         Me.PictureBoxFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBoxFotoPerfil.TabIndex = 0
         Me.PictureBoxFotoPerfil.TabStop = False
         '
         'GroupBoxDatosUsuario
         '
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.DateTimePickerNacimiento)
+        Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelNacimiento)
         Me.GroupBoxDatosUsuario.Controls.Add(Me.ComboBoxNacionalidad)
         Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelNacionalidad)
         Me.GroupBoxDatosUsuario.Controls.Add(Me.TextBoxApellido2)
@@ -118,9 +122,9 @@ Partial Class AGENDA
         Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelApellido1)
         Me.GroupBoxDatosUsuario.Controls.Add(Me.LabelNombre)
         Me.GroupBoxDatosUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBoxDatosUsuario.Location = New System.Drawing.Point(15, 15)
+        Me.GroupBoxDatosUsuario.Location = New System.Drawing.Point(6, 15)
         Me.GroupBoxDatosUsuario.Name = "GroupBoxDatosUsuario"
-        Me.GroupBoxDatosUsuario.Size = New System.Drawing.Size(308, 220)
+        Me.GroupBoxDatosUsuario.Size = New System.Drawing.Size(317, 278)
         Me.GroupBoxDatosUsuario.TabIndex = 0
         Me.GroupBoxDatosUsuario.TabStop = False
         Me.GroupBoxDatosUsuario.Text = "Datos del usuario"
@@ -242,7 +246,7 @@ Partial Class AGENDA
         Me.TabPage2.Location = New System.Drawing.Point(4, 27)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(635, 263)
+        Me.TabPage2.Size = New System.Drawing.Size(673, 313)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Datos Opcionales"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -305,7 +309,7 @@ Partial Class AGENDA
         Me.GroupBoxOtrosDatos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBoxOtrosDatos.Location = New System.Drawing.Point(13, 20)
         Me.GroupBoxOtrosDatos.Name = "GroupBoxOtrosDatos"
-        Me.GroupBoxOtrosDatos.Size = New System.Drawing.Size(303, 214)
+        Me.GroupBoxOtrosDatos.Size = New System.Drawing.Size(308, 277)
         Me.GroupBoxOtrosDatos.TabIndex = 0
         Me.GroupBoxOtrosDatos.TabStop = False
         Me.GroupBoxOtrosDatos.Text = "Otros datos"
@@ -331,18 +335,37 @@ Partial Class AGENDA
         'PictureBoxLogo
         '
         Me.PictureBoxLogo.Image = CType(resources.GetObject("PictureBoxLogo.Image"), System.Drawing.Image)
-        Me.PictureBoxLogo.Location = New System.Drawing.Point(278, 8)
+        Me.PictureBoxLogo.Location = New System.Drawing.Point(287, 12)
         Me.PictureBoxLogo.Name = "PictureBoxLogo"
-        Me.PictureBoxLogo.Size = New System.Drawing.Size(377, 31)
+        Me.PictureBoxLogo.Size = New System.Drawing.Size(406, 31)
         Me.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBoxLogo.TabIndex = 1
         Me.PictureBoxLogo.TabStop = False
+        '
+        'LabelNacimiento
+        '
+        Me.LabelNacimiento.AutoSize = True
+        Me.LabelNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelNacimiento.Location = New System.Drawing.Point(22, 242)
+        Me.LabelNacimiento.Name = "LabelNacimiento"
+        Me.LabelNacimiento.Size = New System.Drawing.Size(117, 16)
+        Me.LabelNacimiento.TabIndex = 11
+        Me.LabelNacimiento.Text = "Fecha Nacimiento"
+        '
+        'DateTimePickerNacimiento
+        '
+        Me.DateTimePickerNacimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateTimePickerNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePickerNacimiento.Location = New System.Drawing.Point(153, 236)
+        Me.DateTimePickerNacimiento.Name = "DateTimePickerNacimiento"
+        Me.DateTimePickerNacimiento.Size = New System.Drawing.Size(134, 22)
+        Me.DateTimePickerNacimiento.TabIndex = 12
         '
         'AGENDA
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(667, 330)
+        Me.ClientSize = New System.Drawing.Size(705, 379)
         Me.Controls.Add(Me.PictureBoxLogo)
         Me.Controls.Add(Me.TabControlDatos)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
@@ -392,4 +415,6 @@ Partial Class AGENDA
     Friend WithEvents LabelApellido2 As Label
     Friend WithEvents LabelApellido1 As Label
     Friend WithEvents LabelNombre As Label
+    Friend WithEvents DateTimePickerNacimiento As DateTimePicker
+    Friend WithEvents LabelNacimiento As Label
 End Class

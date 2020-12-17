@@ -10,4 +10,8 @@
     Private Sub AGENDA_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
     End Sub
+
+    Private Sub RadioButtonMasculino_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButtonMasculino.CheckedChanged
+
+    End Sub
 End Class
